@@ -5,27 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="816a76a4-57ac-4c3e-8b95-01eb47a63615" name="Changes" comment="DemoJ2EE">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/AdminResource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/AdminServlet.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/ChurchApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/MemberResources.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/database/DatabaseConnector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/models/Admin.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/models/Member.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/menu_2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/DemoJ2EE_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/DemoJ2EE_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/HelloApplication.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/HelloResource.kt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/church.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/about.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/audio_wave.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_filled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/menu_filled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/services.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +57,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/karan/IntellijIdea/Ultimate/DemoJ2EE/src/main/webapp/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -81,6 +79,12 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karan\IntellijIdea\Ultimate\DemoJ2EE\src\main\webapp\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karan\IntellijIdea\Ultimate\DemoJ2EE\src\main\webapp" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.demoj2ee.models" />
     </key>
@@ -196,8 +200,24 @@
       <workItem from="1681896877285" duration="75000" />
       <workItem from="1681896996591" duration="2183000" />
       <workItem from="1681914003733" duration="6015000" />
-      <workItem from="1681920349239" duration="3601000" />
+      <workItem from="1681920349239" duration="11626000" />
+      <workItem from="1682001254532" duration="66000" />
     </task>
+    <task id="LOCAL-00001" summary="DemoJ2EE">
+      <created>1681924772020</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681924772020</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DemoJ2EE">
+      <created>1681924813620</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681924813620</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +235,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="DemoJ2EE" />
     <option name="LAST_COMMIT_MESSAGE" value="DemoJ2EE" />
   </component>

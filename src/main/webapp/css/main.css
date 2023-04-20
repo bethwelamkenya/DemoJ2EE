@@ -262,6 +262,8 @@ textarea {
   }
 }
 
+/*window skeleton appears here*/
+
 * {
   outline: none;
   border: none;
@@ -274,12 +276,14 @@ body {
 nav {
   position: fixed;
   top: 0;
-  transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   left: 0;
   height: 100%;
   width: 150px;
   display: flex;
+  z-index: 999;
   flex-direction: column;
+  justify-content: space-between;
   background: white;
 }
 
@@ -287,7 +291,8 @@ nav a {
   text-decoration: none;
   color: black;
   height: 30px;
-  transition: border-radius 0.4s ease-in-out;
+  width: 125px;
+  transition: border-radius 0.4s ease-in-out, width 0.4s ease-in-out, padding 0.4s ease-in-out;
   font-weight: bold;
   font-size: large;
   padding: 10px;
@@ -302,11 +307,16 @@ nav a {
 
 nav a span {
   display: flex;
+  transition: width 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 nav a img {
   height: 20px;
   width: 20px;
+  background: transparent;
+  overflow: hidden;
+  transition: width 0.4s ease-in-out;
   margin-right: 10px;
   margin-bottom: 7px;
 }
@@ -319,24 +329,43 @@ nav a:hover {
 }
 
 nav img {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   margin-left: 10px;
   margin-top: 10px;
+  /*padding: 5px;*/
+  background: white;
+  border-radius: 10px;
 }
 
 nav img:hover {
+  background: #55555550;
   cursor: pointer;
+}
+
+nav .nav-footer {
+
 }
 
 #main-body {
   margin-left: 150px;
+  transition: margin-left 0.4s ease-in-out;
 }
+
 
 header {
   width: 100%;
   background: white;
   border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 
 #page-title {
@@ -346,8 +375,183 @@ header {
   /*margin-left: 150px;*/
 }
 
-@media screen and (max-width: 600px){
-  nav a span {
-    display: none;
+@media screen and (min-width: 700px){
+  nav {
+    width: 150px;
   }
+
+  nav a {
+    width: 125px;
+  }
+
+  nav a span {
+    width: 100%;
+  }
+
+  nav.active {
+    width: 70px;
+  }
+
+  nav.active a {
+    width: 50px;
+  }
+
+  nav.active a span {
+    width: 0;
+  }
+
+  #main-body.active {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px){
+  nav {
+    width: 70px;
+  }
+
+  nav a span {
+    width: 0;
+  }
+
+  nav a {
+    width: 50px;
+  }
+
+  nav.active {
+    width: 150px;
+  }
+
+  nav.active a {
+    width: 125px;
+  }
+
+  nav.active a span{
+    width: 100%;
+  }
+
+  #main-body {
+    margin-left: 70px;
+  }
+
+  #main-body.active {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  nav {
+    width: 0;
+    height: 50px;
+  }
+
+  nav a img {
+    width: 0;
+  }
+
+  nav a {
+    width: 0;
+    /*padding: 0;*/
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  nav a span {
+    width: 0;
+  }
+
+  nav.active {
+    height: 100%;
+    width: 150px;
+  }
+
+  nav.active a {
+    display: flex;
+    padding: 10px;
+    width: 125px;
+  }
+
+  nav.active a img {
+    width: 30px;
+  }
+
+  nav.active a span {
+    width: 100%;
+  }
+
+  #main-body {
+    margin-left: 0;
+  }
+
+  header img {
+    margin-left: 70px;
+  }
+}
+
+.last-footer {
+  border-bottom-right-radius: 0;
+}
+
+.last-footer:hover {
+  border-bottom-right-radius: 0;
+}
+
+
+/*body content appears here*/
+
+form {
+  background: white;
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0 5px 5px #3c353530;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  border-radius: 15px;
+  height: 30px;
+  border: 2px solid #3c353530;
+  margin-top: 10px;
+  font-size: large;
+  color: #000000cc;
+  padding: 5px;
+}
+
+form button {
+  font-size: larger;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+form button:hover {
+  cursor: pointer;
+  background: darkgrey;
+  margin-top: 10px;
+}
+
+#member-login {
+  display: none;
+}
+
+#admin-login {
+  display: none;
+}
+
+#admin-signup {
+  display: none;
+  /*transform: translateY(-50px);*/
+  width: 370px;
+}
+
+#admin-signup input {
+  position: static;
+  width: 250px;
+  margin: 10px;
+  right: 10px;
 }

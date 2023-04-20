@@ -4,7 +4,9 @@ let memberLogIn = document.getElementById("member-login");
 let adminLogIn = document.getElementById("admin-login");
 let adminSignUp = document.getElementById("admin-signup");
 const navBar = document.querySelector("nav");
+const mainBody = document.querySelector("#main-body");
 const header = document.querySelector("header");
+
 let scrollTimeout;
 let ws;
 
@@ -24,8 +26,44 @@ let ws;
 //     }
 // };
 
+window.onload = function () {
+  const windowWidth = window.innerWidth;
+  if (windowWidth < 550.0){
+    pageTitle.textContent = "Moi Main Altar"
+  } else {
+    pageTitle.textContent = "Moi University Main Altar"
+  }
+}
+
+window.onresize = function () {
+  const windowWidth = window.innerWidth;
+  if (windowWidth < 550.0){
+    pageTitle.textContent = "Moi Main Altar"
+  } else {
+    pageTitle.textContent = "Moi University Main Altar"
+  }
+}
+
+window.onscroll = function() {
+  const windowWidth = window.innerWidth;
+  if (windowWidth < 500.0){
+    navBar.classList.remove("active");
+    mainBody.classList.remove("active");
+  }
+}
+
+// window.addEventListener("resize", function () {
+//   const windowWidth = window.innerWidth;
+//   if (windowWidth < 550.0){
+//     pageTitle.textContent = "Moi Main Altar"
+//   } else {
+//       pageTitle.textContent = "Moi University Main Altar"
+//   }
+// });
+
 navbarToggleButton.addEventListener("click", function () {
   navBar.classList.toggle("active");
+  mainBody.classList.toggle("active");
 });
 
 memberLogIn.addEventListener("submit", function (event) {

@@ -19,6 +19,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -30,13 +31,13 @@
 <nav>
   <div>
     <img id="navbar-toggle-button" src="img/menu.svg" alt="Show Menu">
-    <a href="#"><img src="img/home.svg" alt="Show Menu"><span>Home</span></a>
-    <a href="#"><img src="img/services.svg" alt="Show Menu"><span>Services</span></a>
-    <a href="#"><img src="img/audio_wave.svg" alt="Show Menu"><span>Recordings</span></a>
-<!--    <a href="#"><img src="img/user.svg" alt="Show Menu"><span>Account</span></a>-->
+    <a href="#" class="activeSpans"><img src="img/home.svg" alt="Show Menu"><span>Home</span></a>
+    <a href="services.html"><img src="img/services.svg" alt="Show Menu"><span>Services</span></a>
+    <a href="recordings.html"><img src="img/audio_wave.svg" alt="Show Menu"><span>Recordings</span></a>
+    <!--    <a href="#"><img src="img/user.svg" alt="Show Menu"><span>Account</span></a>-->
   </div>
   <div class="nav-footer">
-    <a href="#"><img src="img/settings.svg" alt="Show Menu" ><span>Settings</span></a>
+    <a href="#"><img src="img/settings.svg" alt="Show Menu"><span>Settings</span></a>
     <a href="#"><img src="img/user.svg" alt="Show Menu"><span>Account</span></a>
     <a href="#"><img src="img/about.svg" alt="Show Menu" class="last-footer"><span>About</span></a>
   </div>
@@ -47,7 +48,7 @@
     <h1 id="page-title">Moi University Main Altar</h1>
   </header>
 
-  <section >
+  <section>
     <h1>Hello World</h1>
     <h1>Hello World</h1>
     <h1>Hello World</h1>
@@ -69,6 +70,70 @@
     <h1>Hello World</h1>
     <h1>Hello World</h1>
   </section>
+
+  <!-- <footer></footer> -->
+
+  <footer id="footer">
+    <div class="box-container">
+      <div>
+        <h3> Social Media</h3>
+        <p>Find our social media handles here</p>
+        <div class="share">
+          <a target="_blank" href="https://www.facebook.com/bethwelkaranja.wairimu"><img src="img/facebook_new.svg" alt="facebook"></a>
+          <a target="_blank" href="https://www.twitter.com/bethwel_karanja"><img src="img/twitter_circled.svg" alt="twitter"></a>
+          <a target="_blank" href="https://www.instagram.com/bethwel_karanja/"><img src="img/instagram_new.svg" alt="instagram"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/bethwel-karanja-35667b207/"><img src="img/linkedin.svg" alt="linkedin"></a>
+        </div>
+      </div>
+
+      <div class="boxes">
+        <h3>Contact Info</h3>
+        <a class="links">
+          <img src="img/phone_message.svg" alt="call us">
+          +254713 171 848
+        </a>
+        <a target="_blank" href="mailto:karanjabethwel12598@gmail.com" class="links">
+          <i><img src="img/gmail.svg" alt="mail to"></i>
+          karanjabethwel12598@gmail.com
+        </a>
+        <a target="_blank"
+           href="https://www.google.com/maps/dir/0.2829029,35.2917425/Moi+University+Main+Campus+Eldoret,+Moi+University,+Kipkenyo,+Kesses+Moi+University+Road/@0.2851804,35.2904123,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1780f5ec5a9f9d87:0x159cb96600e6f677!2m2!1d35.293861!2d0.286735"
+           class="links"><i><img src="img/google_maps.svg" alt="location"></i> Moi University, Kesses </a>
+      </div>
+
+      <div class="boxes">
+        <h3>Quick Links</h3>
+        <a href="#page-title" class="links">
+          <i><img src="img/circled_chevron_right.svg" alt="home"></i>
+          Home
+        </a>
+        <a href="services.html" class="links">
+          <i><img src="img/circled_chevron_right.svg" alt="services"></i>
+          Services
+        </a>
+        <a href="recordings.html" class="links">
+          <i><img src="img/circled_chevron_right.svg"alt="recordings"></i>
+          Recordings
+        </a>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <label for="email">Subscribe for latest updates</label>
+        <input type="email" placeholder="Your Email" class="email" id="email" name="email">
+        <button type="submit" class="btn" id="subscribe">Subscribe</button>
+      </div>
+
+    </div>
+
+    <div class="credit">
+      Created by
+      <span> Bethwel Karanja Wairimu </span>
+      | All
+      <a href="#" class="links"> Rights </a>
+      reserved
+    </div>
+
+  </footer>
 
 </main>
 

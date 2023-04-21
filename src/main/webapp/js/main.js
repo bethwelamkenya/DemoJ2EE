@@ -3,6 +3,7 @@ let pageTitle = document.getElementById("page-title");
 let memberLogIn = document.getElementById("member-login");
 let adminLogIn = document.getElementById("admin-login");
 let adminSignUp = document.getElementById("admin-signup");
+let recordSearch = document.getElementById("record-search");
 const navBar = document.querySelector("nav");
 const mainBody = document.querySelector("#main-body");
 const header = document.querySelector("header");
@@ -73,6 +74,13 @@ memberLogIn.addEventListener("submit", function (event) {
 
 adminLogIn.addEventListener("submit", function (event) {
   event.preventDefault();
+});
+
+recordSearch.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const  formData = new FormData(recordSearch);
+  alert(formData.get("search-date"));
+  alert("submitted");
 });
 
 adminSignUp.addEventListener("submit", function (event) {

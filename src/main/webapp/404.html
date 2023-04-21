@@ -14,7 +14,7 @@
     html {
       color: #888;
       display: table;
-      font-family: sans-serif;
+      font-family: Dubai, sans-serif;
       height: 100%;
       text-align: center;
       width: 100%;
@@ -22,8 +22,29 @@
 
     body {
       display: table-cell;
+      background: whitesmoke;
       vertical-align: middle;
       margin: 2em auto;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    header img {
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+    }
+
+    #page-title {
+      font-size: xx-large;
+      font-weight: bolder;
+      margin: 10px;
     }
 
     h1 {
@@ -54,8 +75,12 @@
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+<header>
+  <img src="church.png" alt="church image">
+  <h1 id="page-title">Moi University Main Altar</h1>
+</header>
+<h1>404 Page Not Found</h1>
+<p>Sorry, but the page you were trying to view does not exist.</p>
 </body>
 
 </html>

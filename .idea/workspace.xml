@@ -5,22 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="816a76a4-57ac-4c3e-8b95-01eb47a63615" name="Changes" comment="DemoJ2EE">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/church.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/about.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/audio_wave.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home_filled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/menu_filled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/services.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/settings.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/database/DatabaseAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/database/DatabaseConnector1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/circled_chevron_right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/circled_pause.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/circled_play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/download_from_cloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/facebook_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gmail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/google_maps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/instagram_new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/linkedin_circled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/phone_message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/twitter_circled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/wavy_line.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/recordings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/AdminResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/AdminResource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/database/DatabaseConnector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demoj2ee/database/DatabaseConnector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,31 +67,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/karan/IntellijIdea/Ultimate/DemoJ2EE/src/main/webapp/img&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.obiscr.chatgpt.settings.ChatGPT&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/karan/IntellijIdea/Ultimate/DemoJ2EE/src/main/kotlin/com/example/demoj2ee/database",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.obiscr.chatgpt.settings.ChatGPT",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karan\IntellijIdea\Ultimate\DemoJ2EE\src\main\kotlin\com\example\demoj2ee\database" />
+      <recent name="C:\Users\karan\IntellijIdea\Ultimate\DemoJ2EE\src\main\webapp" />
       <recent name="C:\Users\karan\IntellijIdea\Ultimate\DemoJ2EE\src\main\webapp\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -201,7 +217,9 @@
       <workItem from="1681896996591" duration="2183000" />
       <workItem from="1681914003733" duration="6015000" />
       <workItem from="1681920349239" duration="11626000" />
-      <workItem from="1682001254532" duration="66000" />
+      <workItem from="1682001254532" duration="11156000" />
+      <workItem from="1682021987211" duration="762000" />
+      <workItem from="1682062227475" duration="2231000" />
     </task>
     <task id="LOCAL-00001" summary="DemoJ2EE">
       <created>1681924772020</created>
@@ -217,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681924813620</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DemoJ2EE">
+      <created>1682001386171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682001386171</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

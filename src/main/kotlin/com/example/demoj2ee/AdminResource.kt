@@ -1,6 +1,6 @@
 package com.example.demoj2ee
 
-import com.example.demoj2ee.database.DatabaseConnector
+import com.example.demoj2ee.database.DatabaseConnector1
 import com.example.demoj2ee.models.Admin
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.google.gson.Gson
@@ -10,14 +10,13 @@ import javax.ws.rs.GET
 import javax.ws.rs.POST
 import javax.ws.rs.Path
 import javax.ws.rs.Produces
-import javax.ws.rs.client.Entity.json
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.core.Response
 
 
 @Path("/admin/{action}")
 class AdminResource {
-    val databaseConnector = DatabaseConnector()
+    val databaseConnector1 = DatabaseConnector1()
 
     @GET
     @Produces("text/plain")
@@ -53,12 +52,12 @@ class AdminResource {
     }
 
     fun adminSignUp(admin: Admin) : String {
-        databaseConnector.insertAdmin(admin)
+        databaseConnector1.insertAdmin(admin)
         return "OK"
     }
 
     fun adminLogIn(admin: Admin) : String {
-        return if (databaseConnector.findAdmin(admin.user_name) == null){
+        return if (databaseConnector1.findAdmin(admin.user_name) == null){
             "FALSE"
         } else {
             "OK"

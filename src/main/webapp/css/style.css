@@ -1,0 +1,86 @@
+.specific-page-title {
+  text-align: center;
+}
+
+.record-search {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  background: none;
+  box-shadow: none;
+}
+
+.record-search button {
+  border-radius: 10px;
+  transition: border-radius 0.4s ease-in-out;
+}
+
+.record-search button:hover {
+  border-radius: 20px;
+}
+
+.record-search input {
+  font-weight: bold;
+  font-size: large;
+  background: #eeeeee;
+  border: none;
+  height: 35px;
+  text-align: center;
+  /*padding: 20px 10px 10px;*/
+  border-radius: 10px;
+}
+
+.record-search input:hover {
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  background: #55555550;
+  transition: background-color 0.15s ease-in-out, color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px #55555530;
+}
+
+.list li:hover {
+  background: #555555;
+  /*box-shadow: 0 5px 5px #55555550;*/
+  color: white;
+}
+
+.list li h3 {
+  font-weight: bolder;
+}
+
+.list li p {
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.list img {
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  border-radius: 25%;
+}
+
+.list img:hover {
+  background: #888888;
+  cursor: pointer;
+}
+
+.list .audio-wave {
+  border-radius: 10px;
+  width: calc(100% - 100px);
+}
+
+.list .audio-wave:hover {
+  background: #88888800;
+}

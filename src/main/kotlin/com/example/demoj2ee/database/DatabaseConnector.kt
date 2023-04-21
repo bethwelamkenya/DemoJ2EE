@@ -1,65 +1,29 @@
 package com.example.demoj2ee.database
 
-import com.example.demoj2ee.models.Admin
-import com.example.demoj2ee.models.Member
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.ejb.Stateless
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.SQLException
 
-@Stateless
 class DatabaseConnector {
-    @PersistenceContext
-    private lateinit var entityManager: EntityManager;
+    private val sqlConnection: String =
+        "jdbc:sqlite:" + System.getProperty("user.home") + "/AppData/Roaming/App2/Databases/church.sqlite"
 
-    fun insertMember(member: Member) {
-        entityManager.persist(member)
-    }
+//    private val sqlConn: String = "jdbc:mysql://localhost:3333/church?useSSL=false"
+    private val sqlConn: String = "jdbc:mysql://localhost:3333/church"
+    private val userName: String = "root"
+    private val password: String = "9852"
 
-    fun updateMember(member: Member){
-        entityManager.merge(member)
-    }
+    //            Class.forName("com.mysql.jdbc.driver")
+//            return DriverManager.getConnection(sqlConnection, userName, password)
+    fun getConnection(): Connection {
+        try {
+//            Class.forName("org.sqlite.JDBC")
+            Class.forName("com.mysql.jdbc.driver")
+//            return DriverManager.getConnection(sqlConnection)
+            return DriverManager.getConnection(sqlConn, userName, password)
 
-    fun deleteMember(member: Member){
-        entityManager.remove(entityManager.merge(member))
-    }
-
-    fun findMember(id: Long) : Member{
-        return entityManager.find(Member::class.java, id)
-    }
-
-    fun findMember(name: String) : Member{
-        return entityManager.find(Member::class.java, name)
-    }
-
-    fun findAllMembers() : ArrayList<Member> {
-        return ArrayList(entityManager.createQuery("SELECT e from Member e", Member::class.java).resultList)
-    }
-
-    fun insertAdmin(admin: Admin) {
-        entityManager.persist(admin)
-    }
-
-    fun updateAdmin(admin: Admin){
-        entityManager.merge(admin)
-    }
-
-    fun deleteAdmin(admin: Admin){
-        entityManager.remove(entityManager.merge(admin))
-    }
-
-    fun findAdmin(id: Long) : Admin{
-        return entityManager.find(Admin::class.java, id)
-    }
-
-    fun findAdmin(name: String) : Admin?{
-        return entityManager.find(Admin::class.java, name)
-    }
-
-    fun findAdmin(name: String, password: String) : Admin {
-        return entityManager.find(Admin::class.java, name)
-    }
-
-    fun findAllAdmins() : ArrayList<Admin> {
-        return ArrayList(entityManager.createQuery("SELECT e from Admin e", Admin::class.java).resultList)
+        } catch (e: SQLException) {
+            throw RuntimeException(e)
+        }
     }
 }

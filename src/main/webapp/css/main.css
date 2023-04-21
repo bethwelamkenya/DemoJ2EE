@@ -334,7 +334,7 @@ nav img {
   margin-left: 10px;
   margin-top: 10px;
   /*padding: 5px;*/
-  background: white;
+  background: whitesmoke;
   border-radius: 10px;
 }
 
@@ -345,6 +345,10 @@ nav img:hover {
 
 nav .nav-footer {
 
+}
+
+.activeSpans {
+  background: #55555530;
 }
 
 #main-body {
@@ -462,13 +466,13 @@ header img {
 
   nav.active {
     height: 100%;
-    width: 150px;
+    width: 170px;
   }
 
   nav.active a {
     display: flex;
     padding: 10px;
-    width: 125px;
+    width: 145px;
   }
 
   nav.active a img {
@@ -554,4 +558,104 @@ form button:hover {
   width: 250px;
   margin: 10px;
   right: 10px;
+}
+
+footer {
+  background: white;
+}
+
+footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+footer .box-container h3 {
+  font-size: x-large;
+}
+
+footer img {
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: margin-right 0.25s ease-in-out, transform 0.15s ease-in-out;
+}
+
+footer .share img {
+  height: 40px;
+  width: 40px;
+}
+
+footer .share {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .boxes img {
+  height: 20px;
+  width: 20px;
+}
+
+footer .box-container a {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+  color: gray;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+footer .box-container a:hover img {
+  margin-right: 30px;
+  transform: scale(1.2);
+}
+
+footer .box-container p {
+  line-height: 1.8;
+  font-size: large;
+  color: gray;
+  padding: 10px 0;
+}
+
+footer .box-container label {
+  line-height: 1.8;
+  font-size: large;
+  color: gray;
+  padding: 1rem 0;
+}
+
+footer .box-container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  background: #eeeeee;
+  font-size: larger;
+}
+
+footer .box-container button {
+  font-size: x-large;
+  padding: 10px;
+  transition: background-color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+footer .box-container button:hover {
+  background: #555555;
+  /*color: white;*/
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer .credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: xx-large;
+}
+
+footer .credit span {
+  color: orange;
+}
+
+footer .credit a {
+  text-decoration: none;
 }

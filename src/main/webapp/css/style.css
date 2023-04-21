@@ -1,3 +1,81 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+form {
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+}
+
+form button {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: larger;
+  font-weight: bold;
+  transition: border-radius 0.4s ease-in-out;
+}
+
+form button:hover {
+  cursor: pointer;
+  background: darkgrey;
+  border-radius: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+  font-size: large;
+  padding: 5px;
+  background: #eeeeee;
+}
+
+form a {
+  font-size: larger;
+  color: darkorange;
+  font-weight: bold;
+}
+
+form a:hover {
+  color: chocolate;
+}
+
+#member-login {
+  display: none;
+}
+
+#admin-login {
+  background: white;
+  margin: 10px;
+  box-shadow: 0 5px 5px #55555530;
+  /*display: none;*/
+}
+
+#admin-login button {
+  margin-top: 10px;
+}
+
+#admin-signup {
+  display: none;
+  /*transform: translateY(-50px);*/
+  width: 370px;
+}
+
+#admin-signup input {
+  position: static;
+  width: 250px;
+  margin: 10px;
+  right: 10px;
+}
+
 .specific-page-title {
   text-align: center;
 }
@@ -6,28 +84,11 @@
   position: fixed;
   top: 0;
   right: 10px;
-  background: none;
-  box-shadow: none;
-}
-
-.record-search button {
-  border-radius: 10px;
-  transition: border-radius 0.4s ease-in-out;
-}
-
-.record-search button:hover {
-  border-radius: 20px;
 }
 
 .record-search input {
   font-weight: bold;
   font-size: large;
-  background: #eeeeee;
-  border: none;
-  height: 35px;
-  text-align: center;
-  /*padding: 20px 10px 10px;*/
-  border-radius: 10px;
 }
 
 .record-search input:hover {
@@ -84,3 +145,79 @@
 .list .audio-wave:hover {
   background: #88888800;
 }
+
+table {
+  background: white;
+  border-radius: 15px;
+  margin: 5px;
+  empty-cells: hide;
+  border-collapse: collapse;
+}
+
+table tr {
+  transition: transform 0.25s ease-in-out, border-radius 0.25s ease-in-out, background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+table tr td {
+  padding: 5px 10px;
+  transition: color 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+  border-bottom: 2px solid #55555550;
+}
+
+table tr:first-child td {
+  color: darkorange;
+  border-color: transparent;
+  background: #555555;
+  font-weight: bolder;
+}
+
+table tr:first-child td:first-child {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+table tr:first-child td:last-child {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+table tr td:first-child {
+  font-weight: bold;
+}
+
+table tr:hover {
+  box-shadow: 0 5px 5px #55555550;
+  border-radius: 25px;
+  background: #555555;
+  cursor: pointer;
+  transform: translateY(-15px);
+}
+
+table tr:first-child:hover {
+  transform: none;
+  cursor: auto;
+}
+
+table tr:hover td {
+  color: navajowhite;
+}
+
+table tr:first-child:hover {
+  border-radius: 15px;
+}
+
+table tr:hover td:first-child {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+table tr:hover td:last-child {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/*table tr:first-child:hover td {*/
+/*  color: darkorange;*/
+/*}*/
+
+

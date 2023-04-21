@@ -503,62 +503,6 @@ header img {
 
 /*body content appears here*/
 
-form {
-  background: white;
-  border-radius: 15px;
-  height: fit-content;
-  width: fit-content;
-  box-shadow: 0 5px 5px #3c353530;
-  padding: 10px;
-}
-
-form label {
-  font-weight: bold;
-}
-
-form input {
-  border-radius: 15px;
-  height: 30px;
-  border: 2px solid #3c353530;
-  margin-top: 10px;
-  font-size: large;
-  color: #000000cc;
-  padding: 5px;
-}
-
-form button {
-  font-size: larger;
-  padding: 10px;
-  border-radius: 15px;
-  font-weight: bold;
-}
-
-form button:hover {
-  cursor: pointer;
-  background: darkgrey;
-  margin-top: 10px;
-}
-
-#member-login {
-  display: none;
-}
-
-#admin-login {
-  display: none;
-}
-
-#admin-signup {
-  display: none;
-  /*transform: translateY(-50px);*/
-  width: 370px;
-}
-
-#admin-signup input {
-  position: static;
-  width: 250px;
-  margin: 10px;
-  right: 10px;
-}
 
 footer {
   background: white;

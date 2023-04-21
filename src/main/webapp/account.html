@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Moi University</title>
+  <title>Account</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,14 +31,14 @@
 <nav>
   <div>
     <img id="navbar-toggle-button" src="img/menu.svg" alt="Show Menu">
-    <a href="#" class="activeSpans"><img src="img/home.svg" alt="Show Menu"><span>Home</span></a>
+    <a href="index.html"><img src="img/home.svg" alt="Show Menu"><span>Home</span></a>
     <a href="services.html"><img src="img/services.svg" alt="Show Menu"><span>Services</span></a>
     <a href="recordings.html"><img src="img/audio_wave.svg" alt="Show Menu"><span>Recordings</span></a>
     <!--    <a href="#"><img src="img/user.svg" alt="Show Menu"><span>Account</span></a>-->
   </div>
   <div class="nav-footer">
     <a href="#"><img src="img/settings.svg" alt="Show Menu"><span>Settings</span></a>
-    <a href="account.html"><img src="img/user.svg" alt="Show Menu"><span>Account</span></a>
+    <a href="#" class="activeSpans"><img src="img/user.svg" alt="Show Menu"><span>Account</span></a>
     <a href="#"><img src="img/about.svg" alt="Show Menu" class="last-footer"><span>About</span></a>
   </div>
 </nav>
@@ -49,26 +49,18 @@
   </header>
 
   <section>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
+    <h1 class="specific-page-title">Account Page</h1>
+    <div>
+      <form action="http://localhost:8080/DemoJ2EE-1.0-SNAPSHOT/api/admin" method="post" id="admin-login">
+        <h2>Log In</h2>
+        <label for="user-name">User Name</label><br>
+        <input type="text" name="user-name" id="user-name" placeholder="User Name"><br>
+        <label for="login-password">Password</label><br>
+        <input type="password" name="login-password" id="login-password" placeholder="********"><br>
+        <button type="submit">Log In</button>
+        <p>Forgot Password? <a href="#">Reset Password</a></p>
+      </form>
+    </div>
   </section>
 
   <!-- <footer></footer> -->
